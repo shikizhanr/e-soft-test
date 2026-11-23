@@ -1,0 +1,37 @@
+.house {
+    display: grid;
+    grid-template-columns: repeat(15, 20px);
+    grid-template-rows: repeat(15, 20px);
+}
+
+
+.base {
+    grid-column: 1 / -1;
+    grid-row: 6 / -1;
+
+    background-color: lightsalmon;
+}
+
+.window {
+    grid-column: 5 / 8;
+    grid-row: 9 / 12;
+
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+.roof {
+    grid-column: 1 / -1;
+    grid-row: 1 / 6;
+
+    background-color: brown;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.chimney {
+    grid-column: 12;
+    grid-row: 2 / 5;
+    z-index: -1;
+    
+    background-color: darkslategray;
+}
